@@ -1,0 +1,9 @@
+<!-- La sección Ticket Validation dentro de la vista Check-In, presenta un form conteniendo un input
+text field con el label Ticket Identifier, junto con un button Check-In.  -->
+
+<form>
+    <label for="ticket">Ticket Identifier</label>
+    <input matInput id="ticket" [(ngModel)]="ticketId" name="ticketId">
+    <button mat-flat-button (click)="checkIn()">Check-In</button>
+    {{text}}
+</form>

@@ -1,9 +1,5 @@
 <div class="cards-container">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    @for (event of events; track $index) {
+    <app-card [event]="event" />
+    }
 </div>

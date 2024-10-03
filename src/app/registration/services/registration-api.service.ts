@@ -13,4 +13,8 @@ export class RegistrationApiService {
   getAllEvents() {
     return this.http.get(`${this.urlBase}/events`);
   }
+
+  getAttendeesByEventId(eventId: number) {
+    return this.http.get(`${this.urlBase}/attendees?eventId=${eventId}`);
+  }
 }

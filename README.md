@@ -1,4 +1,4 @@
-ng add @angular/materia
+ng add @angular/material
 npm i @ngx-translate/http-loader @ngx-translate/core
 
 https://material.angular.io/components/categories
